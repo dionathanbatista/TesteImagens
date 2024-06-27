@@ -1,0 +1,50 @@
+﻿<Window x:Class="TesteImagens.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Fluent="urn:fluent-ribbon"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TesteImagens"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Fluent:Ribbon Grid.Row="0" Height="122">
+            <!--Backstage-->
+            <Fluent:Ribbon.Menu>
+                <Fluent:Backstage/>
+            </Fluent:Ribbon.Menu>
+            <!--Tabs-->
+            <Fluent:RibbonTabItem Header="Home">
+                <Fluent:RibbonGroupBox Header="Consultas">
+                    <Fluent:SplitButton x:Name="btnClientes" Header="Clientes" Icon="pack://application:,,,/TesteImagens;component/Imagens/clientes_ico.png" LargeIcon="pack://application:,,,/TesteImagens;component/Imagens/clientes_ico.png" SizeDefinition="Large">
+                        <Fluent:MenuItem x:Name="btnNovoCliente" Header="Novo Cliente" Icon="pack://application:,,,/TesteImagens;component/Imagens/new-cliente.png" />
+                    </Fluent:SplitButton>
+                    <Fluent:SplitButton Header="Produtos" x:Name="btnProdutos" Icon="pack://application:,,,/TesteImagens;component/Imagens/consultar_produtos.png" LargeIcon="pack://application:,,,/TesteImagens;component/Imagens/consultar_produtos.png" SizeDefinition="Large">
+                        <Fluent:MenuItem x:Name="btnNovoProduto" Header="Novo Produto" Icon="pack://application:,,,/TesteImagens;component/Imagens/new-produto.png" />
+                    </Fluent:SplitButton>
+                    <Fluent:SplitButton Header="Funcionarios" x:Name="btnFuncionarios" Icon="pack://application:,,,/TesteImagens;component/Imagens/ico_funcionario.png" LargeIcon="pack://application:,,,/TesteImagens;component/Imagens/ico_funcionario.png" SizeDefinition="Large">
+                        <Fluent:MenuItem x:Name="btnNovoFuncionario" Header="Novo Funcionario" Icon="pack://application:,,,/GDM;component/Imagens/new-produto.png" />
+                    </Fluent:SplitButton>
+                </Fluent:RibbonGroupBox>
+                <Fluent:RibbonGroupBox Header="Lançamentos">
+                    <Fluent:Button x:Name="btnNovaVenda" Header="Nova Venda" Icon="pack://application:,,,/TesteImagens;component/Imagens/nova_venda.png" LargeIcon="pack://application:,,,/TesteImagens;component/Imagens/nova_venda.png" SizeDefinition="Large" />
+                    <Fluent:Button Header="Novo Orçamento" Icon="pack://application:,,,/TesteImagens;component/Imagens/novo_orcamento2.png" LargeIcon="pack://application:,,,/TesteImagens;component/Imagens/novo_orcamento2.png" />
+                    <Fluent:Button x:Name="bt_ordens" Header="Ordens de Serviço" Icon="pack://application:,,,/TesteImagens;component/Imagens/ordens_servicos.png" LargeIcon="pack://application:,,,/TesteImagens;component/Imagens/ordens_servicos.png" />
+                    <Fluent:Button Header="Nova Condicional" Icon="pack://application:,,,/TesteImagens;component/Imagens/nova_condicional.png" LargeIcon="pack://application:,,,/TesteImagens;component/Imagens/nova_condicional.png" />
+                </Fluent:RibbonGroupBox>
+                <Fluent:RibbonGroupBox Header="Financeiro">
+                    <Fluent:Button Header="Registradora" Icon="pack://application:,,,/TesteImagens;component/Imagens/registradora.png" LargeIcon="pack://application:,,,/TesteImagens;component/Imagens/registradora.png" SizeDefinition="Large" />
+                    <Fluent:Button Header="Caixa" Icon="pack://application:,,,/TesteImagens;component/Imagens/caixa.png" LargeIcon="pack://application:,,,/TesteImagens;component/Imagens/caixa.png" SizeDefinition="Large" />
+                    <Fluent:Button x:Name="bt_contaspagar" Header="Contas a Pagar" Icon="pack://application:,,,/TesteImagens;component/Imagens/a_pagar.png" LargeIcon="pack://application:,,,/TesteImagens;component/Imagens/a_pagar.png" SizeDefinition="Large" />
+                    <Fluent:Button x:Name="bt_contasreceber" Header="Contas a Receber" Icon="pack://application:,,,/TesteImagens;component/Imagens/a_receber.png" LargeIcon="pack://application:,,,/TesteImagens;component/Imagens/a_receber.png" SizeDefinition="Large" />
+                </Fluent:RibbonGroupBox>
+                <Fluent:RibbonGroupBox Header="Fiscal">
+                    <Fluent:Button x:Name="bt_nfe" Header="NFes" Icon="pack://application:,,,/TesteImagens;component/Imagens/nfe_2.png" LargeIcon="pack://application:,,,/TesteImagens;component/Imagens/nfe_2.png" SizeDefinition="Large"/>
+                    <Fluent:Button x:Name="bt_nfce" Header="NFCes" Icon="pack://application:,,,/TesteImagens;component/Imagens/unnamed (1).png" LargeIcon="pack://application:,,,/TesteImagens;component/Imagens/unnamed (1).png" SizeDefinition="Large" />
+                    <Fluent:Button x:Name="bt_mdfe" Header="MDFes" Icon="pack://application:,,,/TesteImagens;component/Imagens/mdfe.png" LargeIcon="pack://application:,,,/TesteImagens;component/Imagens/mdfe.png" SizeDefinition="Large" />
+                    <Fluent:Button x:Name="bt_sped" Header="Sped" Icon="pack://application:,,,/TesteImagens;component/Imagens/sped.png" LargeIcon="pack://application:,,,/TesteImagens;component/Imagens/sped.png" SizeDefinition="Large" />
+                </Fluent:RibbonGroupBox>
+            </Fluent:RibbonTabItem>
+        </Fluent:Ribbon>
+    </Grid>
+</Window>

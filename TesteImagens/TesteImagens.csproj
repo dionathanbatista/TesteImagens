@@ -9,6 +9,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+	  <None Remove="Imagens\*" />
+	  <Resource Include="Imagens\*" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Fluent.Ribbon" Version="10.1.0" />
   </ItemGroup>
 
